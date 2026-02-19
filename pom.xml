@@ -1,6 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.1.0 http://maven.apache.org/xsd/maven-4.1.0.xsd" root="true">
+    <modelVersion>4.1.0</modelVersion>
 
     <groupId>com.pi4j</groupId>
     <artifactId>pi4j-parent</artifactId>
@@ -164,14 +163,13 @@
     </repositories>
 
     <!-- PROJECT MODULES -->
-    <modules>
-        <!-- THE FOLLOWING ARE THE Pi4J MODULES -->
-        <module>libraries/pi4j-library</module>
-        <module>pi4j-core</module>
-        <module>plugins/pi4j-plugin</module>
-        <module>pi4j-test</module>
-        <module>pi4j-distribution</module>
-    </modules>
+    <subprojects>
+        <subproject>libraries/pi4j-library</subproject>
+        <subproject>pi4j-core</subproject>
+        <subproject>plugins/pi4j-plugin</subproject>
+        <subproject>pi4j-test</subproject>
+        <subproject>pi4j-distribution</subproject>
+    </subprojects>
 
     <!-- BUILD PROPERTIES -->
     <properties>
