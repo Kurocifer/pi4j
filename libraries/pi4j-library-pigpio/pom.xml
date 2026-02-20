@@ -262,14 +262,14 @@
                                 <phase>generate-resources</phase>
                                 <configuration>
                                     <target>
-                                        <mkdir dir="target" />
-                                        <mkdir dir="target/classes" />
-                                        <mkdir dir="target/build" />
-                                        <mkdir dir="target/build/native" />
+                                        <mkdir dir="target"/>
+                                        <mkdir dir="target/classes"/>
+                                        <mkdir dir="target/build"/>
+                                        <mkdir dir="target/build/native"/>
                                         <copy todir="target/build/native">
-                                            <fileset dir="src/main/native" />
+                                            <fileset dir="src/main/native"/>
                                         </copy>
-                                        <chmod dir="target/build/native" perm="ugo+rx" includes="*.sh" />
+                                        <chmod dir="target/build/native" perm="ugo+rx" includes="*.sh"/>
                                     </target>
                                 </configuration>
                                 <goals>
