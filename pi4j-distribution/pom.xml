@@ -255,7 +255,7 @@
                     <installDir>/opt/pi4j</installDir>
 
                     <signPackage>${pi4j.gpg.sign}</signPackage>
-                    <signMethod>dpkg-sig</signMethod>/home/kurocifer
+                    <signMethod>dpkg-sig</signMethod>
                     <signRole>builder</signRole>
 
                     <!-- NOTE:
